@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/product-detail.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <title>Nike! Just do it</title>
+</head>
+<body>
+    <header>
+        <img src="../img/logo.png" alt="Logo" style="width:100px; height:50px">
+        <nav class="desktop">
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/men-category.html">Men</a></li>
+                <li><a href="../html/women-category.html">Women</a></li>
+                <li><a href="../html/shopping-cart.html">Shopping cart</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <i id="login" class="fa-solid fa-arrow-right-to-bracket" title="Log in"></i>
+            <i id="register" class="fa-solid fa-plus" title="Register"></i>
+            <!-- <i class="fa-solid fa-cart-plus"></i> -->
+            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+        </div>
+        <div class="mobileNav">
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/men-category.html">Men</a></li>
+                <li><a href="../html/women-category.html">Women</a></li>
+                <li><a href="../html/shopping-cart.html">Shopping cart</a></li>
+            </ul>
+        </div>
+        
+    </header>
+
+    <article>
+        <div class="detail__img">
+            <img src="../img/men5.webp" alt="">
+            <img src="../img/women9.webp" alt="">
+            <img class="desktopImg" src="../img/women6.webp" alt="">
+            <img class="desktopImg" src="../img/men9.webp" alt="">
+        </div>
+
+        <div class="detail__info">
+
+            <div class="detail__info__title">
+                <h3>Nike Solo Swoosh</h3>
+                <h5>Fleece Hoodies</h5>
+                <p>$48.97</p>
+            </div>
+
+            <div class="detail__info__size">
+                <h5>Select Size</h5>
+                <button>XS</button>
+                <button>S</button>
+                <button>S Tall</button>
+                <button>M</button>
+                <button>M Tall</button>
+                <button>L</button>
+                <button>L Tall</button>
+                <button>XL</button>
+                <button>XL Tall</button>
+                <button>2XL</button>
+                <button>2XL Tall</button>
+                <button>3XL</button>
+                <button>3XL Tall</button>
+                <button>4XL</button>
+                <button>4XL Tall</button>
+            </div>
+
+            <div class="detail__info__buy">
+                <button id="addToBag" onclick="window.open('../html/shopping-cart.html','_self')">Add To Bag</button>
+                <button id="favorite">Favorite</button>
+            </div>
+            
+        </div>
+
+        <div class="Login">
+            <div class="login-card">
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+                <h2>Login</h2>
+                <h3>Enter your credentials</h3>
+
+                <form action="" class="login-form">
+                    <input type="text" id="userLogin" placeholder="Username" required>
+                    <input type="password" id="passwordLogin" placeholder="Password" required>
+                    <a href="#">Forget your password?</a>
+                    <button id="submitLogin" tpye="submit" onclick="Login()">LOGIN</button>
+                </form>
+                <button id="cancelLogin">Cancel</button>
+            </div>
+        </div>
+        
+        <div class="Register">
+            <div class="register-card">
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+                <h2>Register</h2>
+                <h3>Enter your credentials</h3>
+
+                <form action="" class="register-form">
+                    <input type="text" id="userRegister" placeholder="Username" required>
+                    <input type="password" id="passwordRegister" placeholder="Password" required>
+                    <input type="reset">
+                    <button id="submitRegister" tpye="submit" onclick="Register()">REGISTER</button>
+                </form>
+                <button id="cancelRegister">Cancel</button>
+            </div>
+        </div>
+
+    </article>
+
+
+    <footer>
+        <p>Copyright © 2023 by Kai Vo All Rights Reserved</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/register.js"></script>
+
+</body>
+</html>

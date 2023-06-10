@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/shopping-cart.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <title>Nike! Just do it</title>
+</head>
+<body class="body">
+    <header>
+        <img src="../img/logo.png" alt="Logo" style="width:100px; height:50px">
+        <nav class="desktop">
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/men-category.html">Men</a></li>
+                <li><a href="../html/women-category.html">Women</a></li>
+                <li><a href="../html/shopping-cart.html">Shopping cart</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <i id="login" class="fa-solid fa-arrow-right-to-bracket" title="Log in"></i>
+            <i id="register" class="fa-solid fa-plus" title="Register"></i>
+            <!-- <i class="fa-solid fa-cart-plus"></i> -->
+            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+        </div>
+        <div class="mobileNav">
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/men-category.html">Men</a></li>
+                <li><a href="../html/women-category.html">Women</a></li>
+                <li><a href="../html/shopping-cart.html">Shopping cart</a></li>
+            </ul>
+        </div>
+        
+    </header>
+
+    <article>
+            <div class="checkOut__product">
+                <div class="checkOut__product__shipping">
+                    <div class="border">
+                        <h2>Free Shipping for Members.</h2>
+                        <p>Become a Nike Member for fast and free shipping.</p>
+                    </div>
+                    <h2>Bag</h2>
+                    <div class="checkOut__product__shipping__info">
+                        <img src="../img/men10.webp" alt="">
+                        <div class="checkOut__product__shipping__info__quantity">
+                            <h4>Nike Sportsweat tech Fleece</h4>
+                            <p>Crew Sweatshirt</p>
+                            <p>Color: Black</p>
+                            <table>
+                                <tr>
+                                    <th style="font-weight: 300; text-align: left; font-size: 15px;">Size</th>
+                                    <th>
+                                        <input type="text" id="txt_ide" list="ide">
+                                        <datalist id="ide">
+                                            <option value="XS"></option>
+                                            <option value="S"></option>
+                                            <option value="S Tall"></option>
+                                            <option value="M"></option>
+                                            <option value="M Tall"></option>
+                                            <option value="L"></option>
+                                            <option value="L Tall"></option>
+                                            <option value="XL"></option>
+                                            <option value="XL Tall"></option>
+                                            <option value="2XL"></option>
+                                            <option value="2XL Tall"></option>
+                                            <option value="3XL"></option>
+                                            <option value="3XL Tall"></option>
+                                            <option value="4XL"></option>
+                                            <option value="4XL Tall"></option>
+                                        </datalist>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th style="font-weight: 300; text-align: left; font-size: 15px;">Quantity</th>
+                                    <th>
+                                        <input type="text" id="quantity" list="quantitys">
+                                        <datalist id="quantitys">
+                                            <option value="1"></option>
+                                            <option value="2"></option>
+                                            <option value="3"></option>
+                                            <option value="4"></option>
+                                            <option value="5"></option>
+                                            <option value="6"></option>
+                                            <option value="7"></option>
+                                            <option value="8"></option>
+                                            <option value="9"></option>
+                                            <option value="10"></option>
+                                        </datalist>
+                                    </th>
+                                </tr>
+                            </table>
+                            
+                        </div>
+                        <h5 style="text-align: right; line-height: 2em">$48.97</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkOut__method">
+                <h2>Summary</h2>
+                <h3>Do you have a Promo Code?</h3>
+                <div class="checkOut__method__sumary">
+                    <p>Subtotal</p>
+                    <p>$48.97</p>
+                </div>
+                <div class="checkOut__method__sumary">
+                    <p>Estimated Shipping & Handling</p>
+                    <p>$8.0</p>
+                </div>
+                <div class="checkOut__method__sumary">
+                    <p>Estimated Tax</p>
+                    <p>-</p>
+                </div>
+                <div class="checkOut__method__sumary">
+                    <p>Total</p>
+                    <p id="price">$56.97</p>
+                </div>
+            </div>
+        
+        
+
+        <div class="Login">
+            <div class="login-card">
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+                <h2>Login</h2>
+                <h3>Enter your credentials</h3>
+
+                <form action="" class="login-form">
+                    <input type="text" id="userLogin" placeholder="Username" required>
+                    <input type="password" id="passwordLogin" placeholder="Password" required>
+                    <a href="#">Forget your password?</a>
+                    <button id="submitLogin" tpye="submit" onclick="Login()">LOGIN</button>
+                </form>
+                <button id="cancelLogin">Cancel</button>
+            </div>
+        </div>
+        
+        <div class="Register">
+            <div class="register-card">
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+                <h2>Register</h2>
+                <h3>Enter your credentials</h3>
+
+                <form action="" class="register-form">
+                    <input type="text" id="userRegister" placeholder="Username" required>
+                    <input type="password" id="passwordRegister" placeholder="Password" required>
+                    <input type="reset">
+                    <button id="submitRegister" tpye="submit" onclick="Register()">REGISTER</button>
+                </form>
+                <button id="cancelRegister">Cancel</button>
+            </div>
+        </div>
+
+        
+    </article>
+
+
+    <footer>
+        <p>Copyright © 2023 by Kai Vo All Rights Reserved</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="../js/shopping-cart.js"></script>
+
+</body>
+</html>
